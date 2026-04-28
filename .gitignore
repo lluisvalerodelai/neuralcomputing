@@ -1,0 +1,4 @@
+EMNIST/
+__MACOSX/
+.venv/
+.ipynb_checkpoints/
