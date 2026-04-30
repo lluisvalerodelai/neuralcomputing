@@ -2,3 +2,4 @@ EMNIST/
 __MACOSX/
 .venv/
 .ipynb_checkpoints/
+saved_model_checkpoints/
