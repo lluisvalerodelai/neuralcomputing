@@ -3,7 +3,7 @@ name = "neural-computing-assignment"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12,<3.13"
 dependencies = [
     "addict>=2.4.0",
     "ipykernel>=7.2.0",
@@ -16,20 +16,20 @@ dependencies = [
     "pip>=26.0.1",
     "scikit-learn>=1.8.0",
     "scipy>=1.17.1",
-    "torch==2.10.0",
-    "torchvision==0.25.0",
+    "torch",
+    "torchvision",
     "tqdm>=4.67.3",
 ]
 
 [[tool.uv.index]]
-name = "pytorch-cu130"
-url = "https://download.pytorch.org/whl/cu130"
+name = "pytorch-cu118"
+url = "https://download.pytorch.org/whl/cu118"
 explicit = true
 
 [tool.uv.sources]
 torch = [
-  { index = "pytorch-cu130", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+  { index = "pytorch-cu118" },
 ]
 torchvision = [
-  { index = "pytorch-cu130", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+  { index = "pytorch-cu118" },
 ]
